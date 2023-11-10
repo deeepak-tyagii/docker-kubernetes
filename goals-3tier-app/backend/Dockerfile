@@ -1,0 +1,19 @@
+FROM node:14
+
+WORKDIR /app
+
+COPY package.json .
+
+RUN npm install
+
+COPY . . 
+
+ARG PORT_NUMBER 80
+
+ENV MONGO_INITDB_ROOT_USERNAME=root
+
+ENV MONGO_INITDB_ROOT_PASSWORD=secret
+
+EXPOSE $PORT_NUMBER
+
+CMD ["npm", "start"]
