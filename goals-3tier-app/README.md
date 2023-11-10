@@ -6,6 +6,10 @@
 
 - Frontend/Backend is based on **Node**
 
+- This project is mainly setup for **DEV** environment not for production.
+
+- It supports **Live Code Changes** (using Docker bind mount volumes)
+
 
 
 
